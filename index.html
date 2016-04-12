@@ -495,6 +495,220 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c">#displaying the first 5 courses in the catalog</span>
+<span class="k">print</span> <span class="s">&#39;First five courses-&#39;</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>First five courses-
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>university</th>
+      <th>department</th>
+      <th>code</th>
+      <th>name</th>
+      <th>prerequisites</th>
+      <th>number_of_prerequisites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>MA10001</td>
+      <td>Mathematics-I</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>PH10001/CY10001</td>
+      <td>Physics/Chemistry</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>ME10001/HS11001</td>
+      <td>Mechanics/English for Communication</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>EE10001/CS11001</td>
+      <td>Electrical Technology/Programming and Data Str...</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>EE19001/CS19001</td>
+      <td>Electrical Technology Lab/Programming and Data...</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c">#displaying the bottom 5 courses in the catalog</span>
+<span class="k">print</span> <span class="s">&#39;Last five courses-&#39;</span><span class="p">,</span>
+<span class="n">data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Last five courses-</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>university</th>
+      <th>department</th>
+      <th>code</th>
+      <th>name</th>
+      <th>prerequisites</th>
+      <th>number_of_prerequisites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>146</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>CS60076</td>
+      <td>Advances in Digital and Mixed Signal Testing</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>CS60078</td>
+      <td>Complex Networks</td>
+      <td>CS11001/02; CS19001/02; CS21003; CS29003</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>CS60080</td>
+      <td>Information Retrieval</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>CS60082</td>
+      <td>Computational Number Theory</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>11/04/2016</td>
+      <td>IIT-Kharagpur</td>
+      <td>Computer Science and Engineering</td>
+      <td>CS60084</td>
+      <td>Foundations of Cryptography</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">#To plot histogram</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="o">%</span> <span class="n">matplotlib</span> <span class="n">inline</span>
@@ -746,7 +960,7 @@ JElSz/3/TV/oL4iQN+gAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">#Exporting data-frame to a csv file</span>
